@@ -1,12 +1,17 @@
 package org.techktown.quizstudy;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.TransitionDrawable;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Transition;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,21 +19,54 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Gallery;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    LinearLayout mLinearLayout;
    // TextView textView;
     //String[] items = {"LEE","CHOI","JEONG","RHO","crow","sally","cohen","rice"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //MyView vw = new MyView(this);
         setContentView(R.layout.activity_main);
 
+
+        //ImageButton button = (ImageButton) findViewById(R.id.button);
+        //TransitionDrawable drawable = (TransitionDrawable) button.getDrawable();
+        //drawable.startTransition(5000);
+        //drawable.startTransition(5000);
+
+
+
+
+
+
+
+        //MyView vw = new MyView(this);
+        /*
+        mLinearLayout = new LinearLayout(this);
+
+        ImageView img = new ImageView(this);
+        Drawable myImage =getResources().getDrawable(R.drawable.ic_launcher_background);
+        img.setImageDrawable(myImage);
+        img.setLayoutParams(new Gallery.LayoutParams(Gallery.LayoutParams.WRAP_CONTENT,
+                Gallery.LayoutParams.WRAP_CONTENT));
+
+        mLinearLayout.addView(img);
+
+
+
+
+        setContentView(mLinearLayout);
+        */
 
 
         /*
